@@ -1,0 +1,3 @@
+rootProject.name='gmail_layout'
+include ':app', 'faker.gradle'
+

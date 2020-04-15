@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/text_round"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/round_background"
+        android:gravity="center"
+        android:text="T"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text_round"
+        android:layout_alignTop="@id/text_round"
+        android:text="Full name"
+        android:paddingLeft="5dp"
+        android:textSize="28sp" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_name"
+        android:layout_toRightOf="@id/text_round"
+        android:layout_marginLeft ="5dp">
+        <TextView
+            android:id="@+id/text_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/image_favorite"
+            android:text="subtitle"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:ellipsize="end" />
+        <ImageView
+            android:id="@+id/image_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star_normal"
+            android:layout_below="@id/text_subtitle"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/text_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="context"
+            android:textSize="20sp"
+            android:layout_below="@id/text_subtitle"
+            android:layout_toLeftOf="@id/image_favorite"
+            android:singleLine="true"
+            android:ellipsize="end" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
